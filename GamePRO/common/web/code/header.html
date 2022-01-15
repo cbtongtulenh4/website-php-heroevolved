@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="navbar">
+    <a href="template/images/logo.png"</a>
+    <nav>
+        <ul class="f">
+            <li><a class="light" href="<?php echo $_SESSION["path"]; ?>decorator/url.php?myPage=home">HOME</a></li>
+            <li class="active"><a  class="light">GAME INFO</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">Battleground</a></li>
+                        <li class="active1"><a class="update">Update</a><i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="<?php echo $_SESSION["path"]; ?>decorator/url.php?myPage=banlist">Ban List</a></li>
+                                    <li><a href="<?php echo $_SESSION["path"]; ?>decorator/url.php?myPage=newskin">New Skin</a></li>
+                                    <li><a href="">Event</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Items</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a class="light" href="<?php echo $_SESSION["path"]; ?>decorator/url.php?myPage=heros">HEROES</a></li>
+            <li><a class="light"href="#">NEW</a></li>
+            <li><a class="light" href="<?php echo $_SESSION["path"]; ?>decorator/url.php?myPage=store">STORE</a></li>
+        </ul>
+    </nav>
+    <div class="search">
+        <input type = "Search" placeholder="Search">
+        <i class="fa fa-search" aria-hidden="true"></i>
+    </div>
+    </div>
+    <div class="tooltip">
+        <a href="<?php echo $_SESSION["path"]; ?>decorator/url.php?myPage=login" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" 
+        title="<?php echo $_SESSION["USERNAME"]; ?>">
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+        </a>
+    </div>
+</body>
+</html>
